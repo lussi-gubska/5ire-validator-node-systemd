@@ -61,6 +61,7 @@ $BIN_DIR/$BIN \
     --pruning archive \
     --base-path=$DATA_DIR \
     --keystore-path $DATA_DIR \
+    --node-key-file $DATA_DIR/secrets/node.key \
     --validator \
     --name $NAME \
     --in-peers 10 --out-peers 10 --in-peers-light 10 --log info \
@@ -87,6 +88,7 @@ ExecStart= $(which $BIN) \\
     --pruning archive \\
     --base-path=$DATA_DIR \\
     --keystore-path $DATA_DIR \\
+    --node-key-file $DATA_DIR/secrets/node.key \\
     --validator \\
     --name $NAME \\
     --in-peers 10 --out-peers 10 --in-peers-light 10 --log info \\
