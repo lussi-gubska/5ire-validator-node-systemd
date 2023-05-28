@@ -121,11 +121,10 @@ mkdir $BACKUP_DIR
 cp $DATA_DIR/secrets/node.key $BACKUP_DIR
 ```
 
-## open ports WS && P2P
+## open port P2P
 ```bash
-sudo ufw allow 9944/tcp
 sudo ufw allow 30333/tcp
-sudo ufw status | grep -e 9944 -e 30333
+sudo ufw status | grep 30333
 ```
 
 ## Forward WS port from your server to your PC in Linux OS. Run this command on our PC, not on server! Dont forgot replace USER , IP to your values
