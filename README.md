@@ -132,7 +132,7 @@ ssh -p 22 -o ExitOnForwardFailure=yes -o ServerAliveInterval=60 \
       -N -L 9944:localhost:9944 <USER>@<SERVER IP>
 ```
 
-## Forward WS port from your server to your PC in MS Windows. //// I dont know how do it in MS Windows, sorry. If everybody know this, please DM me
+## Forward WS port from your server to your PC in MS Windows. //// I dont know how do it in MS Windows, sorry. 
 ```bash
 
 ```
