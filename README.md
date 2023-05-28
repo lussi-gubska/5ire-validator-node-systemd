@@ -138,7 +138,7 @@ ssh -p 22 -o ExitOnForwardFailure=yes -o ServerAliveInterval=60 \
 ```
 
 
-## Now, follow the official manual for setting up the validator app https://docs.5ire.org/docs/5ireChain-tools/validator-application Just follow official manual, its easy. Install 5ire Wallet extension for your Chrome browser https://chrome.google.com/webstore/detail/5irechain-wallet/keenhcnmdmjjhincpilijphpiohdppno . Create wallet. Connect the node to the application using this link ws://127.0.0.1:9944. Create validator inside the app. Add stake to the validator. 
+## Now, follow the official manual for setting up the validator app https://docs.5ire.org/docs/5ireChain-tools/validator-application  Install 5ire Wallet extension for your Chrome browser https://chrome.google.com/webstore/detail/5irechain-wallet/keenhcnmdmjjhincpilijphpiohdppno . Create wallet. Connect the node to the application using this link ws://127.0.0.1:9944. Create validator inside the app. Add stake to the validator. 
 ```bash
 
 ```
