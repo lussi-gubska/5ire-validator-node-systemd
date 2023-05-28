@@ -127,7 +127,7 @@ sudo ufw allow 30333/tcp
 sudo ufw status | grep 30333
 ```
 
-## Forward WS port from your server to your PC in Linux OS. Run this command on our PC, not on server! Dont forgot replace USER , IP to your values
+## Tunnel WS port from your server to your PC in Linux OS. Run this command on our PC, not on server! Dont forgot replace USER , IP to your values
 ```bash
 ssh -p 22 -o ExitOnForwardFailure=yes -o ServerAliveInterval=60 \
       -N -L 9944:localhost:9944 <USER>@<SERVER IP>
