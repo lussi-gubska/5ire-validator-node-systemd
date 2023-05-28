@@ -60,7 +60,7 @@ $BIN_DIR/$BIN \
     --bootnodes /ip4/3.128.99.18/tcp/30333/p2p/12D3KooWSTawLxMkCoRMyzALFegVwp7YsNVJqh8D2p7pVJDqQLhm \
     --pruning archive \
     --base-path=$DATA_DIR \
-    --keystore-path $DATA_DIR \
+    --keystore-path $DATA_DIR/keystore \
     --node-key-file $DATA_DIR/secrets/node.key \
     --validator \
     --name $NAME \
@@ -87,7 +87,7 @@ ExecStart= $(which $BIN) \\
     --bootnodes /ip4/3.128.99.18/tcp/30333/p2p/12D3KooWSTawLxMkCoRMyzALFegVwp7YsNVJqh8D2p7pVJDqQLhm \\
     --pruning archive \\
     --base-path=$DATA_DIR \\
-    --keystore-path $DATA_DIR \\
+    --keystore-path $DATA_DIR/keystore \\
     --node-key-file $DATA_DIR/secrets/node.key \\
     --validator \\
     --name $NAME \\
@@ -133,13 +133,13 @@ ssh -p 22 -o ExitOnForwardFailure=yes -o ServerAliveInterval=60 \
       -N -L 9944:localhost:9944 <USER>@<SERVER IP>
 ```
 
-## Forward WS port from your server to your PC in MS Windows. //// I dont know how do it in MS Windows, sorry. 
+## Forward WS port from your server to your PC in MS Windows. //// I dont know how do it in MS Windows, sorry.//// 
 ```bash
 
 ```
 
 
-## Now, follow the official manual for setting up the validator app https://docs.5ire.org/docs/5ireChain-tools/validator-application  Install 5ire Wallet extension for your Chrome browser https://chrome.google.com/webstore/detail/5irechain-wallet/keenhcnmdmjjhincpilijphpiohdppno . Create wallet. Connect the node to the application using this link ws://127.0.0.1:9944. Create validator inside the app. Add stake to the validator. 
+## Now, follow the official manual for setting up the validator app https://docs.5ire.org/docs/5ireChain-tools/validator-application . Install 5ire Wallet extension for your Chrome browser https://chrome.google.com/webstore/detail/5irechain-wallet/keenhcnmdmjjhincpilijphpiohdppno . Create wallet. Connect the node to the application using this link ws://127.0.0.1:9944 . Create validator inside the app. Add stake to the validator. 
 ```bash
 
 ```
