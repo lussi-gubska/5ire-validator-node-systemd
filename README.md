@@ -127,19 +127,22 @@ sudo ufw allow 30333/tcp
 sudo ufw status | grep 30333
 ```
 
-## Tunnel WS port from your server to your PC in Linux OS. Run this command on our PC, not on server! Dont forgot replace USER , IP to your values
+## Tunnel WS port from your server to your PC in Linux OS. 
+Run this command on our PC, not on server! Dont forgot replace USER , IP to your values
 ```bash
 ssh -p 22 -o ExitOnForwardFailure=yes -o ServerAliveInterval=60 \
       -N -L 9944:localhost:9944 <USER>@<SERVER IP>
 ```
 
-## Forward WS port from your server to your PC in MS Windows. //// I dont know how do it in MS Windows, sorry.//// 
+## Tunnel WS port from your server to your PC in MS Windows.
+//// I dont know how do it in MS Windows, sorry.//// 
 ```bash
 
 ```
 
 
-## Now, follow the official manual for setting up the validator app https://docs.5ire.org/docs/5ireChain-tools/validator-application . Install 5ire Wallet extension for your Chrome browser https://chrome.google.com/webstore/detail/5irechain-wallet/keenhcnmdmjjhincpilijphpiohdppno . Create wallet. Connect the node to the application using this link ws://127.0.0.1:9944 . Create validator inside the app. Add stake to the validator. 
+## Now, follow the official manual for setting up the validator app
+https://docs.5ire.org/docs/5ireChain-tools/validator-application . Install 5ire Wallet extension for your Chrome browser https://chrome.google.com/webstore/detail/5irechain-wallet/keenhcnmdmjjhincpilijphpiohdppno . Create wallet. Connect the node to the application using this link ws://127.0.0.1:9944 . Create validator inside the app. Add stake to the validator. 
 ```bash
 
 ```
@@ -150,7 +153,7 @@ cp -R $DATA_DIR/keystore $BACKUP_DIR
 
 
 ##  useful commands
-see logs
+see logs without redundant information
 ```bash
 journalctl -n 100 -f -u $DAEMON | grep -v \\
     -e "✨ Imported" \\
