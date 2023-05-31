@@ -135,9 +135,16 @@ ssh -p 22 -o ExitOnForwardFailure=yes -o ServerAliveInterval=60 \
 ```
 
 ## Tunnel WS port from your server to your PC in MS Windows.
-//// I dont know how do it in MS Windows, sorry.//// 
-```bash
+//// I dont know how do it in MS Windows, sorry.////
 
+But, you can always use google . Here, for example, there is such a guide https://woshub.com/ssh-tunnel-port-forward-windows/
+
+```bash
+Run the following command in the PowerShell console to install the OpenSSH client on Windows 10/11 or Windows Server 2022/2019:
+Get-WindowsCapability -Online | ? Name -like 'OpenSSH.Client*'
+To create an SSH tunnel with a remote host <SERVER_IP>, run the command:
+ssh -L 9944:<SERVER_IP>:9944 <USER>@<SERVER_IP>
+he following connection string is used in this example: LOCAL_PORT:DESTINATION_IP:DESTINATION_PORT and USER@DESTINATION_IP (the username and address of the remote SSH server)
 ```
 
 
