@@ -137,7 +137,11 @@ ssh -p 22 -o ExitOnForwardFailure=yes -o ServerAliveInterval=60 \
 ## Tunnel WS port from your server to your PC in MS Windows.
 //// I dont use MS Windows, sorry. And I dont know exactly how to do it////
 
-But, you can always use google . Here, for example, there is such a guide https://woshub.com/ssh-tunnel-port-forward-windows/
+But, you can always use google . 
+
+Here, for example, there is such a guide for PowerShell https://woshub.com/ssh-tunnel-port-forward-windows/
+
+Here - for Mobaxterm https://superuser.com/questions/1601631/create-ssh-tunnel-using-mobaxterm-on-windows
 
 ```bash
 Run the following command in the PowerShell console to install the OpenSSH client on Windows 10/11 or Windows Server 2022/2019:
